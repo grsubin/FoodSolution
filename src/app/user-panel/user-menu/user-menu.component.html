@@ -1,0 +1,11 @@
+<h3>Today's Menu</h3>
+<table class="menuTable">
+    <tr>
+        <th>Items</th>
+        <th>Price</th>
+    </tr>
+    <tr *ngFor="let menu of menuList">
+            <td *ngIf = "menu.isAvailable">{{menu.menuName | titlecase}}</td>
+            <td *ngIf = "menu.isAvailable">{{menu.price | currency:'Rs.':'symbol':'.0'}}</td>
+    </tr>
+</table>

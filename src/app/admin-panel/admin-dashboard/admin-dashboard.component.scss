@@ -1,0 +1,84 @@
+
+
+.wrapper{
+    // background-color: #45b6fe;
+    padding-bottom: 2.7%;
+    
+
+}
+.background{
+    background:url("../../../assets/images/background.jpg");
+    // background:url("../../../assets/images/background-yellow.jpg");
+    background-attachment: fixed;
+
+}
+// .head img{
+//     max-width: 10%;
+// }
+// .head{
+//     text-align: center;
+// }
+// .head span{
+    
+//     display:block;
+// }
+// // .head .image img{
+// //     margin-top: 10px;
+// //     display: block;
+// //     margin-left: auto;
+// //     margin-right: auto;
+// //     width: 30%;
+// // }
+// .head p{
+//     margin-top: 10px;
+//     text-align: center;
+//     font-size: 28px;
+//     color: #fff;
+//     font-weight: bolder;
+// }
+
+.box {
+  display: flex;
+  background: chocolate;
+  height: 210px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.one {
+    
+  background: #87ceeb;
+}
+
+.two {
+    background: #0062cc;
+}
+.two h4 a{
+    padding:0.5em 1em;
+	color: #fff;
+}
+.one h4 a{
+    padding:0.5em 1em;
+    color: #000;
+}
+    
+
+h4 {
+    margin: auto; 
+   text-align: center;
+}
+.two h4 a:hover{
+    text-decoration:none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+.one h4 a:hover{
+    text-decoration:none;
+    border: 2px solid #000;
+    border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */
+
+.active{
+    border: 5px solid darkblue;
+}

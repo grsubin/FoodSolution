@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
   loading = false;
-  returnUrl: string;
+  adminReturnUrl: string;
+  userReturnUrl: string;
   error = '';
 
   constructor(
@@ -27,52 +28,26 @@ export class LoginComponent implements OnInit {
 
     // this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
     //get return url from route parameter or default to '/'
-    this.returnUrl = this.route.queryParams['returnUrl'] || '/';
-     this.authenticationService.logout();
+    this.userReturnUrl = this.route.queryParams['userReturnUrl'] || '/user';
+    this.adminReturnUrl = this.route.queryParams['adminReturnUrl'] || '/admin';
+    this.authenticationService.logout();
+
 
     if(localStorage.getItem('currentUser')){
-      this.router.navigate([this.returnUrl]);
+      this.router.navigate([this.userReturnUrl]);
     }
 
-    //binding from username and password
-    this.loginForm = this.formBuilder.group({
-      username: ['',Validators.required],
-      password: ['',Validators.required]
-    });
+    if(localStorage.getItem('currentAdmin')){
+      this.router.navigate([this.adminReturnUrl]);
+    }
 
     
+
   }
 
   // get f() {return this.loginForm.controls;}
   
-  onSubmit(){
-    
 
-    // stop here if form is invalid
-    if(this.loginForm.invalid){
-      return;
-    }
-
-    //button disabled once clicked
-    this.loading = true;
-
-    this.authenticationService.login(this.loginForm.value.username, this.loginForm.value.password)
-      .subscribe(data =>{
-        if(data){
-          localStorage.setItem('currentUser', JSON.stringify(data));
-        }
-
-        this.router.navigate([this.returnUrl]);
-      },
-      error=>{
-        this.error = error;
-
-        //button removed from disabled
-        this.loading = false;
-      });
-
-    
-  }
 
 
 }

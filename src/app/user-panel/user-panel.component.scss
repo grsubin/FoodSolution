@@ -1,0 +1,39 @@
+.wrapper{
+    background:white;
+    height: 100%;
+    padding-bottom: 2.35%;;
+}
+.head .image img{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.head .image h4{
+    color: #0062cc;
+    text-align: center;
+}
+.head .image p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #0062cc;
+    font-weight: bolder;
+}
+
+.login-container{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    background: #87CEEB;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-2{
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,25 @@
+
+.login-container{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.register{
+    padding: 5%;
+    background: #87CEEB;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.register h5{
+    color: #fff;
+}
+.register .confirm{
+    margin-top: 20px;
+}
+
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}

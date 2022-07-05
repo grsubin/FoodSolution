@@ -1,0 +1,45 @@
+<h3>Place your Order Here</h3>
+<form class="container">
+
+    <table class="orderTable">
+        <tr>
+            <th>Items</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <tr *ngFor="let menu of menuList">
+            <td>
+                <label for="item">{{menu.menuName}}</label>
+            </td>
+            <td>
+                <h5>{{menu.price}}</h5>
+            </td>
+            <td>
+                <div class="quantity">
+                    <button (click)="add(menu);calcTotal()" class="plus-btn" type="button" name="button">
+                        <img src="../../../assets/images/plus.svg" alt="" />
+                    </button>
+                    <input disabled type="text" min="0" name="name"
+                        value="{{menu.quantity}}">
+                    <button (click)="reduce(menu);calcTotal()" class="minus-btn" type="button" name="button">
+                        <img src="../../../assets/images/minus.svg" alt="" />
+                    </button>
+                </div>
+            </td>
+            <td>
+                <h5 class = "total">{{menu.price * menu.quantity}}</h5>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h6>Time</h6></td>
+            <td><input type="time" class="form-control shortBox" value="8:15"></td>
+            <td><h5 class = "total">{{netTotal}}</h5></td>
+        </tr>
+
+    </table>
+    <div class="form-group">
+        <input type="submit" class="btnSubmit" (click)= 'onSubmit()' value="Order" />
+    </div>
+</form>

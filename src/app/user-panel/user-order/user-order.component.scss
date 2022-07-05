@@ -1,0 +1,80 @@
+h3{
+    text-align: center;
+    color: #fff;
+}
+h5{
+  text-align: center;
+}
+label{
+    font-size: 20px;
+    color: #fff;
+}
+.total{
+  text-align: right;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.orderTable{
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+
+th{
+     text-align: center;
+     padding-bottom: 5%;
+ }
+.form-group{
+    text-align: center;
+}
+
+.quantity {
+    text-align: center;
+
+  }
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 50px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .plus-btn img {
+    margin-bottom: 4px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+
+  .shortBox{
+    text-align: center;
+    width: 100%;
+}
